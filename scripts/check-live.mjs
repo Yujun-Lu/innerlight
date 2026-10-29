@@ -1,0 +1,10 @@
+import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
+import { parseEnv } from 'node:util';
+import { runWithRuntimeEnv } from '../lib/server/runtime-env.ts';
+import { POST as reflect } from '../app/api/reflect/route.ts';
+const env=parseEnv(readFileSync('.dev.vars','utf8'));
+const body={text:'I have been staying up late to listen to a friend. I care about them, but I need twenty quiet minutes tonight and I feel guilty asking for that.',style:'everyday',mode:'live'};
+const result=await runWithRuntimeEnv(env,()=>reflect(new Request('http://127.0.0.1:5173/api/reflect',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)})));
+const data=await result.json();
+mkdirSync('work',{recursive:true});writeFileSync('work/live-reflection.json',JSON.stringify(data,null,2));
+console.log(JSON.stringify({status:result.status,...data}));

@@ -1,0 +1,68 @@
+import type { Meditation, Reflection, ScenarioId } from "./types";
+
+export interface Sample {
+  id: ScenarioId;
+  label: string;
+  text: string;
+  reflection: Reflection;
+  meditation: Meditation;
+}
+
+export const samples: Record<ScenarioId, Sample> = {
+  giving: {
+    id: "giving", label: "Giving too much",
+    text: "I'm always looking after my partner's feelings, listening and staying up late with them. Lately I'm exhausted, but I worry that wanting a break means I don't love them enough. I feel like I've lost myself.",
+    reflection: {
+      summary: "You care deeply about your partner and often put their feelings first. You are also exhausted, and worry that resting might be mistaken for loving less. It sounds like you want room for your own needs in this relationship, too.",
+      feeling: "Exhausted, worried, and a little overlooked",
+      need: "Rest, and space for your own needs to be heard",
+      belief: "Do I have to keep giving to deserve love?", source: "sample",
+    },
+    meditation: {
+      title: "Let care reach you, too",
+      script: "For a moment, let the things you are carrying rest beside you. Notice your feet on the floor, or look at one familiar object nearby. Let your breathing stay natural. There is no special way you need to do this.\n\nYou have spent so much attention on someone you care about. Listening. Staying up late. Making room for their feelings. Those moments matter. And the tiredness you are feeling matters, too. Both can have a place here.\n\nWanting a break does not erase your care. Tonight does not have to become another test of how much you love. You do not need to reach exhaustion before your own needs deserve attention.\n\nIf you would like, ask yourself a small question: what would feel supportive right now? A quiet meal. An earlier night. Someone listening to you. You do not have to find the perfect answer.\n\nYou can care about your partner and still have limits. You can choose how much you have to give tonight. Asking for rest is one way to let your own life take up space.\n\nSlowly notice the room around you again. There is nothing you need to prove in this moment. Perhaps leave a little time for yourself today. The care you offer can include you, too.",
+      affirmation: "I can love someone deeply and care for myself, too.",
+      action: "Take ten quiet minutes without responding to anyone's requests.",
+      boundary: "I care about you, and I'm tired tonight. I'd like to rest now. Could we continue this conversation tomorrow?",
+      source: "sample",
+    },
+  },
+  unanswered: {
+    id: "unanswered", label: "Waiting for a reply",
+    text: "My message hasn't received a reply. I know they might be busy, but I keep checking my phone and wondering whether I'm not good enough. I want to feel connected without losing my whole evening to waiting.",
+    reflection: {
+      summary: "Waiting for a reply leaves you feeling unsettled. You keep checking your phone, and the silence is starting to feel like a judgment about you. You want connection and reassurance, as well as a little steadiness while you wait.",
+      feeling: "Unsettled, disappointed, and caught in waiting",
+      need: "Connection, reassurance, and a little steadiness",
+      belief: "Does an unanswered message mean I'm not good enough?", source: "sample",
+    },
+    meditation: {
+      title: "Keep yourself company while you wait",
+      script: "You do not have to make yourself stop caring. For now, look at the light near a window, or notice something familiar beside you. Let your attention rest there for a moment. Your breathing can stay just as it is.\n\nThat unanswered message has been taking up space in your mind. You want connection. You want to know where you stand. These are real needs, and they are allowed to matter.\n\nAt the same time, this silence cannot tell us its whole story yet. You can acknowledge that you do not know, without turning the uncertainty into a verdict about yourself. Your worth is larger than a notification on a screen.\n\nIf it feels right, set your phone a little farther away. Notice the temperature of your hands, or a sound in the room. While an answer is still missing, you can offer the waiting part of yourself a little care.\n\nPerhaps that means some water, a stretch, or a conversation with someone you trust. You do not need to keep checking to prove how much this connection matters to you.\n\nWhen you are ready, return your attention to the room. Later, you can express what kind of communication you need. For this small moment, you are allowed to have an evening that belongs to you.",
+      affirmation: "I can hope for a reply without putting my worth on hold.",
+      action: "Put your phone aside for five minutes and do something physically comfortable.",
+      boundary: "I feel a little unsettled when I'm waiting. If you're busy, could you let me know when you have time to talk?",
+      source: "sample",
+    },
+  },
+  direction: {
+    id: "direction", label: "Feeling directionless",
+    text: "I've been doing so much, but I feel less certain about what I actually want. Everyone else seems to have a direction, while I mostly feel tired. I'd like to pause and hear my own voice again.",
+    reflection: {
+      summary: "You have kept moving and doing, but your own wishes have become harder to hear. Seeing other people appear certain adds to the pressure. It sounds like you need some space away from comparison to notice what matters to you.",
+      feeling: "Tired, uncertain, and ready to slow down",
+      need: "Room to explore your own wishes without comparison",
+      belief: "Do I have to know my whole direction before I can rest?", source: "sample",
+    },
+    meditation: {
+      title: "You can pause without an answer",
+      script: "Find a position that feels comfortable enough for this moment. There is no need to close your eyes or look relaxed. Notice something around you, and the support beneath your feet. Let this little space belong to you.\n\nYou have been doing a great deal. Moving forward, comparing paths, thinking about what comes next. There may have been very little room left to hear your own preferences. Feeling tired or uncertain does not make you a failure.\n\nYou do not have to answer your whole life today. You do not have to catch up with everyone else's timeline before you are allowed to rest. Your experience deserves care even while your direction is unclear.\n\nIf you would like, remember one small moment from recently. Was there anything you felt curious about, comfortable with, or drawn toward? A song, a color, a quiet walk. It does not have to be useful. Nothing comes to mind? That is okay, too.\n\nYour direction can become clearer through small experiences and honest expression. You are allowed to learn as you go. You are also allowed to change your mind.\n\nNow, notice the room again. Perhaps choose one small thing today simply because you like it. You can make room for yourself before you know exactly where you are going.",
+      affirmation: "I can be uncertain and still make room for my own life.",
+      action: "Write down one moment you enjoyed today, without explaining its usefulness.",
+      boundary: "I'm still exploring what I want. I'd appreciate a little space to do that without comparing my path with anyone else's.",
+      source: "sample",
+    },
+  },
+};
+
+export const sampleList = Object.values(samples);
