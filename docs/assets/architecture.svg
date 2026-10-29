@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="760" viewBox="0 0 960 760" role="img" aria-labelledby="title desc">
+  <title id="title">Innerlight architecture: from words to a little care</title>
+  <desc id="desc">Text or a microphone recording enters the interface. Speech is transcribed on the server. Qwen generates an understanding that the user reviews and edits. Confirmed details guide a care script, followed by segmented speech synthesis, WAV repair, and assembly. The result supports listening, a focus room, reminders, and downloads. Fictional samples use fixed content and included audio without live model requests.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M1 1 6 4 1 7" fill="none" stroke="#8b977b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect x="1" y="1" width="958" height="758" rx="28" fill="#f8f6ec" stroke="#e0e4d5"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <circle cx="58" cy="53" r="13" fill="#e8cd78"/>
+    <text x="84" y="61" font-size="27" font-weight="700" fill="#244638">From words to a little care</text>
+    <text x="44" y="95" font-size="17" fill="#657466">React + TypeScript interface · Vinext / Cloudflare Workers · Alibaba Cloud</text>
+
+    <rect x="40" y="120" width="880" height="98" rx="18" fill="#fffef8" stroke="#dce2d5"/>
+    <circle cx="81" cy="161" r="22" fill="#e8eddf"/>
+    <text x="81" y="168" text-anchor="middle" font-size="18" font-weight="700" fill="#244638">01</text>
+    <text x="120" y="156" font-size="23" font-weight="700" fill="#244638">Share a moment</text>
+    <text x="120" y="183" font-size="18" fill="#526451">Type, or record up to 45 seconds with AudioWorklet.</text>
+    <text x="120" y="205" font-size="17" fill="#657466">For speech: server ASR → editable transcript.</text>
+    <path d="M480 220v22" stroke="#8b977b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="40" y="248" width="880" height="104" rx="18" fill="#fffef8" stroke="#dce2d5"/>
+    <circle cx="81" cy="291" r="22" fill="#e8eddf"/>
+    <text x="81" y="298" text-anchor="middle" font-size="18" font-weight="700" fill="#244638">02</text>
+    <text x="120" y="285" font-size="23" font-weight="700" fill="#244638">Confirm the understanding</text>
+    <text x="120" y="313" font-size="18" fill="#526451">Server reflection route → Qwen structured output.</text>
+    <text x="120" y="338" font-size="17" fill="#657466">Review or edit your situation, feelings, and need. Skip the expectation if you choose.</text>
+    <path d="M480 354v22" stroke="#8b977b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="40" y="382" width="880" height="142" rx="18" fill="#244638"/>
+    <circle cx="81" cy="424" r="22" fill="#e8cd78"/>
+    <text x="81" y="431" text-anchor="middle" font-size="18" font-weight="700" fill="#244638">03</text>
+    <text x="120" y="418" font-size="23" font-weight="700" fill="#fffdf2">Make care personal</text>
+    <text x="120" y="446" font-size="18" fill="#e1e7d3">Confirmed details → Qwen care script → server audio route.</text>
+    <g font-size="16" fill="#fffdf2" text-anchor="middle">
+      <rect x="120" y="465" width="166" height="38" rx="10" fill="#3b5947"/>
+      <text x="203" y="490">Segment narration</text>
+      <text x="306" y="490" fill="#e8cd78">→</text>
+      <rect x="326" y="465" width="158" height="38" rx="10" fill="#3b5947"/>
+      <text x="405" y="490">Synthesize voice</text>
+      <text x="504" y="490" fill="#e8cd78">→</text>
+      <rect x="524" y="465" width="146" height="38" rx="10" fill="#3b5947"/>
+      <text x="597" y="490">Repair WAV</text>
+      <text x="690" y="490" fill="#e8cd78">→</text>
+      <rect x="710" y="465" width="166" height="38" rx="10" fill="#3b5947"/>
+      <text x="793" y="490">Assemble audio</text>
+    </g>
+    <path d="M480 526v22" stroke="#8b977b" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="40" y="554" width="880" height="104" rx="18" fill="#fffef8" stroke="#dce2d5"/>
+    <circle cx="81" cy="597" r="22" fill="#e8eddf"/>
+    <text x="81" y="604" text-anchor="middle" font-size="18" font-weight="700" fill="#244638">04</text>
+    <text x="120" y="591" font-size="23" font-weight="700" fill="#244638">Keep what helps</text>
+    <text x="120" y="619" font-size="18" fill="#526451">Shared player · Focus room · Speed controls · Optional local ambience</text>
+    <text x="120" y="644" font-size="17" fill="#657466">Reminder PNG / text and WAV downloads. Ambience stays separate from narration.</text>
+
+    <rect x="40" y="680" width="880" height="48" rx="14" fill="#eee9d5"/>
+    <text x="58" y="710" font-size="16" font-weight="700" fill="#526451">SAMPLE JOURNEY</text>
+    <text x="228" y="710" font-size="16" fill="#526451">Fixed fictional content + included AI audio · No live model request</text>
+  </g>
+</svg>

@@ -72,22 +72,7 @@ Explore the [project homepage](https://yujun-lu.github.io/innerlight/), open the
 
 ## How it works
 
-```mermaid
-flowchart LR
-    U[Your words] --> I[React + TypeScript interface]
-    M[Microphone · AudioWorklet] --> T[Server transcription route]
-    T --> A[Alibaba Cloud speech recognition]
-    A --> I
-    I --> R[Server reflection route]
-    R --> Q[Qwen structured output]
-    Q --> E[Review and edit understanding]
-    E --> S[Server meditation route]
-    S --> G[Qwen care script]
-    G --> V[Server audio route]
-    V --> W[Segment narration · synthesize · repair and assemble WAV]
-    W --> P[Listen · focus room · downloads]
-    F[Fictional sample assets] --> I
-```
+![Innerlight architecture: share a moment, confirm the understanding, generate a personal care script and narrated WAV, then listen or export. Fictional samples use included content and audio.](docs/assets/architecture.svg)
 
 | Layer | Implementation |
 | --- | --- |
